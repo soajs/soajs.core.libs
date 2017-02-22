@@ -18,6 +18,7 @@
     "test": "grunt test"
   },
   "dependencies": {
+    "soajs.core.libs": "0.0.*"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
