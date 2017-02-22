@@ -1,0 +1,34 @@
+{
+  "name": "soajs.core.libs",
+  "description": "SOAJS core libraries package",
+  "version": "0.0.1",
+  "author": {
+    "name": "soajs team",
+    "email": "team@soajs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:soajs/soajs.core.libs.git"
+  },
+  "license": "Apache-2.0",
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "1.1.0",
+    "grunt-jsdoc": "2.1.0",
+    "grunt-contrib-clean": "1.0.0",
+    "grunt-contrib-copy": "*",
+    "grunt-mocha-test": "0.13.2",
+    "grunt-env": "0.4.4",
+    "grunt-istanbul": "0.7.2",
+    "grunt-coveralls": "1.0.1",
+    "request": "2.79.0"
+  }
+}
