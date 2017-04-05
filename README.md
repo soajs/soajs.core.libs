@@ -1,2 +1,4 @@
 # soajs.core.libs
-soajs core libraries
+
+The following repository provides a set of libraries used by SOAJS framework.
+
