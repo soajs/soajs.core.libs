@@ -1,7 +1,7 @@
 {
   "name": "soajs.core.libs",
   "description": "SOAJS core libraries package",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "soajs team",
     "email": "team@soajs.org"
@@ -20,7 +20,7 @@
   "dependencies": {
   },
   "devDependencies": {
-    "bcrypt": "*",
+    "bcryptjs": "*",
     "grunt": "^1.0.1",
     "grunt-contrib-jshint": "1.1.0",
     "grunt-jsdoc": "2.1.0",
