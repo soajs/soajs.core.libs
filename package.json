@@ -1,7 +1,7 @@
 {
   "name": "soajs.core.libs",
   "description": "SOAJS core libraries package",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": {
     "name": "soajs team",
     "email": "team@soajs.org"
@@ -31,6 +31,6 @@
     "grunt-istanbul": "0.7.2",
     "grunt-coveralls": "1.0.1",
     "mocha": "^1.20.0",
-    "request": "2.79.0"
+    "request": "2.82.0"
   }
 }
