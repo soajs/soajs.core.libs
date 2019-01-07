@@ -22,4 +22,16 @@ describe("testing utils", function(){
 			done();
 		});
 	});
+
+    describe("testing validProperty", function(){
+    	var obj1= {
+    		"antoine" : "hage"
+		};
+
+        it("testing validProperty", function(done){
+            var obj2 = utils.validProperty(obj1,"antoine");
+            assert.ok(obj2);
+            done();
+        });
+    });
 });
