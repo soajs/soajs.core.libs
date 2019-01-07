@@ -10,6 +10,7 @@ describe("importing sample data", function () {
     after(function (done) {
         console.log('test data imported.');
         require("./lib.utils.test.js");
+        require("./lib.version.test.js");
         done();
     });
 });
