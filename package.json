@@ -1,7 +1,7 @@
 {
   "name": "soajs.core.libs",
   "description": "SOAJS core libraries package",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "author": {
     "name": "soajs team",
     "email": "team@soajs.org"
