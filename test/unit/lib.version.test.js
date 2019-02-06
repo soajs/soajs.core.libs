@@ -58,4 +58,35 @@ describe("testing version", function () {
         assert.ok(!ver);
         done();
     });
+
+    it("testing sanitize null", function (done) {
+        let ver = utils.sanitize(null);
+        assert.ok(!ver);
+        done();
+    });
+    it("testing sanitize number", function (done) {
+        let ver = utils.sanitize(1.1);
+        assert.ok(ver);
+        done();
+    });
+    it("testing sanitize string", function (done) {
+        let ver = utils.sanitize("1.2");
+        assert.ok(ver);
+        done();
+    });
+    it("testing unsanitize null", function (done) {
+        let ver = utils.unsanitize(null);
+        assert.ok(!ver);
+        done();
+    });
+    it("testing unsanitize number", function (done) {
+        let ver = utils.unsanitize(1);
+        assert.ok(ver);
+        done();
+    });
+    it("testing unsanitize string", function (done) {
+        let ver = utils.unsanitize("1x2");
+        assert.ok(ver);
+        done();
+    });
 });
