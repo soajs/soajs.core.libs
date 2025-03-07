@@ -20,17 +20,15 @@
   "dependencies": {
   },
   "devDependencies": {
-    "bcryptjs": "*",
-    "grunt": "^1.0.1",
-    "grunt-contrib-jshint": "1.1.0",
-    "grunt-jsdoc": "2.1.0",
-    "grunt-contrib-clean": "1.0.0",
-    "grunt-contrib-copy": "*",
-    "grunt-mocha-test": "0.13.2",
-    "grunt-env": "0.4.4",
-    "grunt-istanbul": "0.7.2",
-    "grunt-coveralls": "1.0.1",
-    "mocha": "^1.20.0",
-    "request": "2.82.0"
+    "grunt": "1.6.1",
+    "grunt-contrib-clean": "2.0.1",
+    "grunt-contrib-copy": "1.0.0",
+    "grunt-contrib-jshint": "3.2.0",
+    "grunt-coveralls": "2.0.0",
+    "grunt-env": "1.0.1",
+    "grunt-istanbul": "0.8.0",
+    "grunt-jsdoc": "2.4.1",
+    "grunt-mocha-test": "0.13.3",
+    "mocha": "11.1.0"
   }
 }

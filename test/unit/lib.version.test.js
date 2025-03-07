@@ -1,8 +1,17 @@
-"use strict";
+'use strict';
+
+/**
+ * @license
+ * Copyright SOAJS All Rights Reserved.
+ *
+ * Use of this source code is governed by an Apache license that can be
+ * found in the LICENSE file at the root of this repository
+ */
+
 let assert = require('assert');
 let helper = require("../helper.js");
 
-var utils = helper.requireModule('./lib/version');
+let utils = helper.requireModule('./lib/version');
 
 describe("testing version", function () {
 

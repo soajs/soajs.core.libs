@@ -61,6 +61,7 @@ module.exports = function (grunt) {
 				"undef": true,
 				"unused": false,
 				"eqnull": true,
+				"esversion": 8,
 				"laxcomma": true,
 				"loopfunc": true,
 				"sub": true,
@@ -80,7 +81,7 @@ module.exports = function (grunt) {
 				ignores: ['test/coverage/**/*.js']
 			},
 			files: {
-				src: ['**/*.js']
+				src: ['index.js', 'Gruntfile.js', 'lib/**/*.js', 'test/**/*.js']
 			},
 			gruntfile: {
 				src: 'Gruntfile.js'

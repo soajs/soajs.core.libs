@@ -1,23 +1,31 @@
-sudo: required
-
+dist: focal
 language: node_js
+node_js: 20
 
-node_js: 8
+jobs:
+  include:
+    - stage: Check code style and coverage
+      before_script:
+        - npm install -g grunt-cli
+      script:
+        - grunt coverage
 
-env:
-  - CXX=g++-4.8
-
-branches:
-  only:
-    - master
-
-addons:
-  hosts:
-  - localhost
-
-before_script:
-- npm install -g grunt-cli
-
-script:
-- grunt coverage
-
+    - stage: Release to github
+      if: branch = master
+      script:
+        - export PACKAGE_VERSION=$(cat package.json | grep version | head -1 | awk -Fn '{ print $2 }' | sed 's/[n:",]//g' | tr -d '[[:space:]]')
+        - git config --local user.name ${GIT_USER}
+        - git config --local user.email ${GIT_EMAIL}
+        - git tag ${PACKAGE_VERSION}
+      before_deploy:
+        - yes | gem update --system --force
+        - gem install bundler
+        - gem install faraday-net_http -v '3.3.0'
+        - gem install uri
+        - gem install logger
+      deploy:
+        on:
+          all_branches: true
+        provider: releases
+        api_key: ${GIT_TOKEN}
+        skip_cleanup: true
