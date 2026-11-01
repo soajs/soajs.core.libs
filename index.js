@@ -15,5 +15,6 @@
 module.exports = {
     "registry": require("./lib/registry.js"),
     "utils": require("./lib/utils.js"),
-    "version": require("./lib/version.js")
+    "version": require("./lib/version.js"),
+    "mcp": require("./lib/mcp.js")
 };

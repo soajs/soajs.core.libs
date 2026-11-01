@@ -18,6 +18,7 @@ describe("importing sample data", function () {
         console.log('test data imported.');
         require("./lib.utils.test.js");
         require("./lib.version.test.js");
+        require("./lib.mcp.test.js");
         done();
     });
 });
